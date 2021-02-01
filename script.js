@@ -1,12 +1,17 @@
+'use strict';
 
-let num = 266219;
-let composition = 1;
-num = String(num);
+let lang = 'ru';
 
-for (let i = 0; i< num.length; i++) {
-  composition *= num[i];
-};
+// if (lang === 'ru') {
+//   console.log('Понедельник, ','Вторник, ','Среда, ','Четверг, ','Пятница, ','Суббота, ','Воскресенье');
+// } else if (lang === 'en') {
+//   console.log('Monday, ','Tuesday, ','Wednesday, ','Thursday, ','Friday, ','Saturday, ','Sunday');
+// }
 
-composition = String(composition**3);
-
-console.log(composition[0], composition[1]);
+switch(lang) {
+  case 'ru':
+    console.log('Понедельник, ','Вторник, ','Среда, ','Четверг, ','Пятница, ','Суббота, ','Воскресенье');
+    break;
+  case 'en':
+    console.log('Monday, ','Tuesday, ','Wednesday, ','Thursday, ','Friday, ','Saturday, ','Sunday');
+}
