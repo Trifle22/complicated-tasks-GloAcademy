@@ -1,17 +1,18 @@
 'use strict';
 
-let string = prompt();
+let string = prompt('Введите что-либо');
 
 function changeString(str) {
-  if (typeof str === 'string') {
+  if (!isNaN(str)) {
+    return 'Передана не строка';
+  } else {
     str = str.trim();
     if (str.length > 31) {
       str = str.replace(str.slice(31, str.length), '...');
     }
     return str;
-  } else {
-    return 'Передана не строка';
   }
 }
 
 console.log(changeString(string));
+
