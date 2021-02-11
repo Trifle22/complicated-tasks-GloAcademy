@@ -1,8 +1,7 @@
 'use strict';
 let time1 = document.querySelector('.time1');
 let time2 = document.querySelector('.time2');
-let now = new Date();
-let nowTime = now.toLocaleTimeString();
+
 
 let week = {
   '1' : 'Понедельник',
@@ -34,6 +33,9 @@ let declensionsSeconds = ['секунда','секунды','секунд'];
 let declensionsHours = ['час','часа','часов'];
 
 function dateOutput1() {
+
+  let now = new Date();
+  let nowTime = now.toLocaleTimeString();
   let minutesNum = nowTime.slice(3,5);
   let secondNum = nowTime.slice(6,8);
   let hoursNum = nowTime.slice(0,2);
@@ -81,13 +83,12 @@ function dateOutput1() {
 dateOutput1();
 
 function dateOutput2() {
+  let now = new Date();
+  let nowTime = now.toLocaleTimeString();
   time2.innerHTML = (`${now.toLocaleDateString()} - ${nowTime}`);
   setInterval(dateOutput2, 1000);
 }
 
 dateOutput2();
-
-
-
 
 
