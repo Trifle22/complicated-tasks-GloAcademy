@@ -1,0 +1,25 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.change-color {
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 20px;
+  outline:none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.change-color:hover {
+  background-color: transparent;
+}
