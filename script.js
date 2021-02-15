@@ -1,4 +1,5 @@
 'use strict';
+
 let time1 = document.querySelector('.time1');
 let time2 = document.querySelector('.time2');
 
